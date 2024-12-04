@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1 class="dashboard-heading">Dashboard</h1>
+        <p class="dashboard-content">Welcome to your dashboard!</p> 
+        <p>If you want to change your password you can do it here.</p>
+        <div class="logout-container">
+            <button id="logoutButton">Log Out</button>
+        </div>
+
+        <div class="change-password-container">   
+        <h2>Change Password</h2>
+    <form id="changePasswordForm">
+        <label for="currentPassword">Current Password:</label>
+        <input type="password" id="currentPassword" name="currentPassword">
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" name="newPassword">
+        <label for="confirmNewPassword">Confirm New Password:</label>
+        <input type="password" id="confirmNewPassword" name="confirmNewPassword">
+         <button type="submit">Change Password</button>
+</form>
+      <div id="change-password-success" style="color: green; margin-top: 10px;"></div>
+      <div id="change-password-error" style="color: red; margin-top: 10px;"></div>
+    </div>
+   </div>
+   <script src="/js/main.js"></script> 
+</body>
+</html>

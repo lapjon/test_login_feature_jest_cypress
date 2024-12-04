@@ -1,0 +1,155 @@
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;          
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    /*max-width: 400px;       
+    margin: 0 auto; */       
+    gap: 15px;            
+}
+
+.form-heading {
+    /* max-width: 400px;
+    text-align: center; */
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fdfafa;
+}
+
+.dashboard-heading {
+  
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;            
+    box-sizing: border-box; 
+}
+
+input, button {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+input {
+    margin-bottom: 15px; /* Add spacing between inputs */
+}
+
+button {
+    margin-top: 10px; /* Add spacing above the button */
+}
+
+h1 {
+    color:white;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 100px;
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+.dashboard-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    margin: 20px 0; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.change-password-container {
+    margin-top: 30px;
+    text-align: left;
+    gap: 15px;
+}
+
+.change-password-container label {
+    font-weight: bold; 
+}
+
+.change-password-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.change-password-container button {
+    
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.change-password-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Container Box */
+.container {
+    background-color: #16005f; /* Dark grey/black box */
+    color: white; /* White text */
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Limit the box width */
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside the box */
+}
+

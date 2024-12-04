@@ -29,8 +29,6 @@ jobs:
     - name: Run Jest tests
       run: npm run test
 
-    - name: Run Cypress tests
+    - name: Run Cypress end-to-end tests in headless mode
       run: npm run test:cypress
-      env:
-        # Set DISPLAY environment variable for Cypress in headless mode
-        DISPLAY: ":99.0"
+  

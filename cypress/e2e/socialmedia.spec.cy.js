@@ -26,9 +26,9 @@ describe('Testing Social Media app: index page and redirect links', () => {
     it('Test Case 3: Verify that Login button redirects to Login page', () => {
       // Verify Login button is visible
       cy.get('a[href="/login.html"] button').should('be.visible');
-      // Click Signup button
+      // Click Login button
       cy.get('a[href="/login.html"] button').click();
-      // Verify URL of Signup page
+      // Verify URL of Login page
       cy.url().should('include', '/login.html');
     });
 

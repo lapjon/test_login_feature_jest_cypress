@@ -72,7 +72,8 @@ Make sure you have the following installed:
 **Running the Application**
 
 To start the server, run:
-npm start
+- npm start
+
 The server will start on `http://localhost:5000`. You can then access the homepage to register or log in.
 
 To run unit tests with Jest:

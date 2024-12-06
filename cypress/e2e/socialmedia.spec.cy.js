@@ -263,7 +263,7 @@ it('Test Case 14: Verify error messages for missing/invalid fields on Login page
     cy.get('input[name="newPassword"]').should('be.visible');
     // Verify label for Confirm New Password
     cy.get('label[for="confirmNewPassword"]').should('be.visible');
-    // Verify that the Conform New Password input field is visible
+    // Verify that the Confirm New Password input field is visible
     cy.get('input[name="confirmNewPassword"]').should('be.visible');
   })
 
@@ -326,7 +326,7 @@ describe('Change Password Tests', () => {
   it('Test Case 21: Verify error message for invalid new password: no uppercase letters', () => {
     // Enter current password
     cy.get('input[name="currentPassword"]').type('Password123');
-    // Enter a simple valid new password that meets all requirements
+    // Enter a new invalid password 
     const newInvalidPassword = 'newpass1';
     cy.get('input[name="newPassword"]').type(newInvalidPassword);
     // Enter new invalid password 
@@ -340,7 +340,7 @@ describe('Change Password Tests', () => {
   it('Test Case 22: Verify error message for invalid new password: no numbers', () => {
     // Enter current password
     cy.get('input[name="currentPassword"]').type('Password123');
-    // Enter a simple valid new password that meets all requirements
+    // Enter a new invalid password 
     const newInvalidPassword = 'NewPassword';
     cy.get('input[name="newPassword"]').type(newInvalidPassword);
     // Enter new invalid password 
@@ -354,7 +354,7 @@ describe('Change Password Tests', () => {
   it('Test Case 23: Verify error message for invalid new password: no letters', () => {
     // Enter current password
     cy.get('input[name="currentPassword"]').type('Password123');
-    // Enter a simple valid new password that meets all requirements
+    // Enter a new invalid password 
     const newInvalidPassword = '12345678';
     cy.get('input[name="newPassword"]').type(newInvalidPassword);
     // Enter new invalid password 
@@ -368,7 +368,7 @@ describe('Change Password Tests', () => {
   it('Test Case 24: Verify error message for invalid new password: less than 8 characters', () => {
     // Enter current password
     cy.get('input[name="currentPassword"]').type('Password123');
-    // Enter a simple valid new password that meets all requirements
+    // Enter a new invalid password 
     const newInvalidPassword = 'Pass123';
     cy.get('input[name="newPassword"]').type(newInvalidPassword);
     // Enter new invalid password 
@@ -422,7 +422,7 @@ describe('Testing Social Media app: End-2-End Happy Flow', () => {
     cy.get('input[name="username"]').type(uniqueUsername);
     // Enter password
     cy.get('input[name="password"]').type(password);
-    // Click Signup button
+    // Click Login button
     cy.get('button[type="submit"]').click();
     // Verify success message is displayed, get success message by id
     cy.get('#success-message').should('contain.text', 'Logged in successfully!');
